@@ -1,0 +1,35 @@
+// grid
+.grid {
+  display: grid;
+  
+  // Columns
+  &-c-1 {
+    grid-template-columns: 1fr;
+  }
+  &-c-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  &-c-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  // Rows
+  &-r-1 {
+    grid-template-rows: 1fr;
+  }
+  &-r-2 {
+    grid-template-rows: 1fr 1fr;
+  }
+  &-r-3 {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  // Spacing
+  &-spantwo {
+    grid-column: span 2;
+  }
+
+  &-gap1 {
+    gap: 10px;
+  }
+
+}

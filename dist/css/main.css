@@ -1,3 +1,142 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-b {
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.flex-jc-s {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.flex-jc-e {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-se {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-ai-b {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.flex-ai-s {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-ai-e {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-ac-c {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.flex-ac-s {
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.flex-ac-e {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.flex-ac-sa {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.flex-ac-sb {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-c-1 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.grid-c-2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.grid-c-3 {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-r-1 {
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.grid-r-2 {
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.grid-r-3 {
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-spantwo {
+  grid-column: span 2;
+}
+
+.grid-gap1 {
+  gap: 10px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,19 +153,19 @@ body {
 }
 
 body p {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 body h1 {
-  font-size: 1.8em;
+  font-size: 2.4em;
 }
 
 body h2 {
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 
 body h3 {
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 body h4 {
@@ -35,15 +174,32 @@ body h4 {
 
 header {
   background: linear-Gradient(to bottom, #ff8f70, #ff3d54);
-  height: 80vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
-  border-radius: 0 0 0 100px;
+  border-radius: 0 0 0 130px;
+}
+
+.header-nav {
+  position: relative;
+  z-index: 1;
+  padding: 70px 45px 120px 45px;
 }
 
 .header-content {
   position: relative;
   z-index: 1;
+  padding: 0px 45px;
+  color: white;
+  text-align: center;
+}
+
+.header-content h1 {
+  padding-bottom: 1.5rem;
+}
+
+.header-content p {
+  padding-bottom: 3em;
 }
 
 .header-background-image {
@@ -55,5 +211,59 @@ header {
   width: 120vw;
   height: 120vh;
   z-index: 0;
+}
+
+.menu-wrapper {
+  padding-right: 20px;
+}
+
+.hamburger-menu {
+  position: relative;
+}
+
+.hamburger-menu::before {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: -10px;
+}
+
+.hamburger-menu:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-menu:nth-child(2) {
+  top: 10px;
+}
+
+.hamburger-menu:nth-child(3) {
+  top: 20px;
+}
+
+.cta-01 {
+  border: solid 2px white;
+  border-radius: 50px;
+  background: white;
+  color: #ff525d;
+  padding: 17px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.cta-02 {
+  border: solid 2px white;
+  border-radius: 50px;
+  background: none;
+  color: white;
+  padding: 17px 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+// Menu Styling
+.menu-wrapper {
+  padding-right: 20px;
+}
+
+.hamburger-menu {
+  position: relative;
+}
+.hamburger-menu::before {
+  content: "";
+  background: $white;
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: -10px;
+}
+
+.hamburger-menu:nth-child(1) {
+  top: 0;
+}
+.hamburger-menu:nth-child(2) {
+  top: 10px;
+}
+.hamburger-menu:nth-child(3) {
+  top: 20px;
+}
+
+
