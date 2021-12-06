@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
+  margin: 0;
 }
 
 html {
@@ -30,5 +31,29 @@ body h3 {
 
 body h4 {
   font-size: 1em;
+}
+
+header {
+  background: linear-Gradient(to bottom, #ff8f70, #ff3d54);
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 0 100px;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header-background-image {
+  background-image: url(/assets/images/bg-pattern-intro.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  width: 120vw;
+  height: 120vh;
+  z-index: 0;
 }
 /*# sourceMappingURL=main.css.map */

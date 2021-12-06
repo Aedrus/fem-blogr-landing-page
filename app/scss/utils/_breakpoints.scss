@@ -1,0 +1,6 @@
+$screen-base: 0px;
+$screen-sm-min: 375px;
+$screen-med-min: 768px;
+$screen-large-min: 1440px;
+$screen-sm-max: ($screen-med-min - 1);
+$screen-med-max: ($screen-large-min - 1);

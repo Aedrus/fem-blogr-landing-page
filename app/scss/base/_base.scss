@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-size: 16px;
+  margin: 0;
 }
 
 html {
@@ -26,3 +27,31 @@ body {
     font-size: 1em;
   }
 }
+
+header {
+  background: $lightredGradient;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 0 100px;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header-background-image {
+  // Summary: Set our background image—with a backup color—, set the image to be centered with no repeat and cover the div. An abosulte position places it out of the flow of other elements and the z-index places it in the background.
+  background-image: url(/assets/images/bg-pattern-intro.svg);
+  // background-color: $lightredGradient;
+  // background-position: top -80px right -480px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  width: 120vw;
+  height: 120vh;
+  z-index: 0;
+}
+
