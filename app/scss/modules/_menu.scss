@@ -1,6 +1,6 @@
 // Menu Styling
 .menu-wrapper {
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .hamburger-menu {
@@ -10,12 +10,12 @@
   content: "";
   background: $white;
   position: absolute;
-  width: 40px;
+  width: 35px;
   height: 3px;
   left: 0;
   right: 0;
   bottom: 0;
-  top: -10px;
+  top: -13px;
 }
 
 .hamburger-menu:nth-child(1) {

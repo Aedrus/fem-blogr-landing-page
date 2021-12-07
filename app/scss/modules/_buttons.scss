@@ -1,12 +1,28 @@
 // Button Styles
 
+button {
+  margin: 0px 10px;
+  font-size: 1.1em;
+  text-align: center;
+  letter-spacing: 0.25px;
+}
+
+.button-wrapper {
+
+  @include phone {
+    button {
+      margin: 10px 10px;
+    }
+  }
+}
+
 .cta-01 {
   border: solid 2px $white;
   border-radius: 50px;
   background: $white;
   color: $lightRed;
-  padding: 17px 20px;
-  font-size: 1.2em;
+  padding: 15px 20px;
+  width: 165px;
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -16,8 +32,8 @@
   border-radius: 50px;
   background: none;
   color: $white;
-  padding: 17px 25px;
-  font-size: 1.2em;
+  padding: 15px 20px;
+  width: 165px;
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
 }

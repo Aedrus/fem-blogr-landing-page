@@ -1,7 +1,10 @@
-* {
+*, 
+*::before, 
+*::after {
   box-sizing: border-box;
   font-size: 16px;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -12,10 +15,10 @@ body {
   background: white;
 
   p {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   h1 {
-    font-size: 2.4em;
+    font-size: 1.9em;
   }
   h2 {
     font-size: 1.8em;
@@ -34,7 +37,6 @@ header {
   position: relative;
   overflow: hidden;
   border-radius: 0 0 0 130px;
-  
 }
 
 .header-nav {

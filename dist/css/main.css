@@ -2,6 +2,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .flex-jc-c {
@@ -137,11 +139,14 @@
   gap: 10px;
 }
 
-* {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -153,11 +158,11 @@ body {
 }
 
 body p {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 body h1 {
-  font-size: 2.4em;
+  font-size: 1.9em;
 }
 
 body h2 {
@@ -214,7 +219,7 @@ header {
 }
 
 .menu-wrapper {
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .hamburger-menu {
@@ -225,12 +230,12 @@ header {
   content: "";
   background: white;
   position: absolute;
-  width: 40px;
+  width: 35px;
   height: 3px;
   left: 0;
   right: 0;
   bottom: 0;
-  top: -10px;
+  top: -13px;
 }
 
 .hamburger-menu:nth-child(1) {
@@ -245,13 +250,26 @@ header {
   top: 20px;
 }
 
+button {
+  margin: 0px 10px;
+  font-size: 1.1em;
+  text-align: center;
+  letter-spacing: 0.25px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .button-wrapper button {
+    margin: 10px 10px;
+  }
+}
+
 .cta-01 {
   border: solid 2px white;
   border-radius: 50px;
   background: white;
   color: #ff525d;
-  padding: 17px 20px;
-  font-size: 1.2em;
+  padding: 15px 20px;
+  width: 165px;
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -261,8 +279,8 @@ header {
   border-radius: 50px;
   background: none;
   color: white;
-  padding: 17px 25px;
-  font-size: 1.2em;
+  padding: 15px 20px;
+  width: 165px;
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
 }
